@@ -1,3 +1,4 @@
+<a id="top"></a>
 <div align="center">
 
 # 🖥️ Install Software
@@ -36,7 +37,7 @@
 
 ---
 
-## <a id="repo-structure"></a>📂 Repository Structure <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="repo-structure"></a>📂 Repository Structure <a href="#top" style="float:right">🔝</a>
 
 ```
 install-software/
@@ -57,7 +58,7 @@ install-software/
 
 ---
 
-## <a id="usage"></a>🚀 Usage <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="usage"></a>🚀 Usage <a href="#top" style="float:right">🔝</a>
 
 ### Ubuntu
 1.  **Configure Root environment**:
@@ -85,7 +86,7 @@ install-software/
 
 ---
 
-## <a id="advanced"></a>🛠️ Advanced Usage (Modularity) <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="advanced"></a>🛠️ Advanced Usage (Modularity) <a href="#top" style="float:right">🔝</a>
 
 The scripts now support category-based installation. Instead of `--all` or `-All`, you can pick specific stacks:
 
@@ -101,7 +102,7 @@ The scripts now support category-based installation. Instead of `--all` or `-All
 
 ---
 
-## <a id="logging"></a>📜 Logging & Recovery <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="logging"></a>📜 Logging & Recovery <a href="#top" style="float:right">🔝</a>
 All installations are logged for troubleshooting:
 - **Ubuntu Root**: `/var/log/install-software-root.log`
 - **Ubuntu User**: `~/.local/state/install-software-user.log`
@@ -109,7 +110,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## <a id="software-list"></a>📋 Software List <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="software-list"></a>📋 Software List <a href="#top" style="float:right">🔝</a>
 
 | # | Software | Category | Description | Ubuntu | Windows |
 |---:|:---|:---|:---|:---|:---|
@@ -285,7 +286,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## <a id="quick-start"></a>🚀 Quick Start <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="quick-start"></a>🚀 Quick Start <a href="#top" style="float:right">🔝</a>
 
 ### Ubuntu
 
@@ -309,7 +310,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 <br>
 
-# <a id="ubuntu-section"></a>🐧 Ubuntu <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+# <a id="ubuntu-section"></a>🐧 Ubuntu <a href="#top" style="float:right">🔝</a>
 
 ## Summary
 
@@ -625,7 +626,7 @@ Installs the Joplin note-taking app via the official installer script.
 
 <br>
 
-# <a id="windows-section"></a>🪟 Windows <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+# <a id="windows-section"></a>🪟 Windows <a href="#top" style="float:right">🔝</a>
 
 ## Summary
 
@@ -783,7 +784,7 @@ This moves the default `Users` folder from `C:\Users` to `D:\Users`.
 
 ---
 
-## <a id="configs"></a>🔧 Configuration Files <a href="#toc"><img src="https://api.iconify.design/material-symbols:arrow-upward.svg?color=gray" width="20" align="right"></a>
+## <a id="configs"></a>🔧 Configuration Files <a href="#top" style="float:right">🔝</a>
 
 | File | Description |
 |:---|:---|
