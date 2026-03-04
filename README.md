@@ -16,27 +16,27 @@
 
 ---
 
-## � Table of Contents
+## <a id="toc"></a>📖 Table of Contents
 
-- [📂 Repository Structure](#-repository-structure)
-- [🚀 Usage](#-usage)
+- [📂 Repository Structure](#repo-structure)
+- [🚀 Usage](#usage)
   - [Ubuntu](#ubuntu)
   - [Windows](#windows)
-- [🛠️ Advanced Usage (Modularity)](#-advanced-usage-modularity)
-- [📜 Logging & Recovery](#-logging--recovery)
-- [📋 Software List](#-software-list)
-- [🚀 Quick Start](#-quick-start)
-- [🐧 Ubuntu](#-ubuntu)
+- [🛠️ Advanced Usage (Modularity)](#advanced)
+- [📜 Logging & Recovery](#logging)
+- [📋 Software List](#software-list)
+- [🚀 Quick Start](#quick-start)
+- [🐧 Ubuntu](#ubuntu-section)
   - [Summary](#summary)
   - [Detailed Steps](#detailed-steps)
-- [🪟 Windows](#-windows)
+- [🪟 Windows](#windows-section)
   - [Summary](#summary-1)
   - [Detailed Steps](#detailed-steps-1)
-- [🔧 Configuration Files](#-configuration-files)
+- [🔧 Configuration Files](#configs)
 
 ---
 
-## �📂 Repository Structure
+## <a id="repo-structure"></a>📂 Repository Structure
 
 ```
 install-software/
@@ -57,7 +57,7 @@ install-software/
 
 ---
 
-## 🚀 Usage
+## <a id="usage"></a>🚀 Usage
 
 ### Ubuntu
 1.  **Configure Root environment**:
@@ -85,7 +85,7 @@ install-software/
 
 ---
 
-## 🛠️ Advanced Usage (Modularity)
+## <a id="advanced"></a>🛠️ Advanced Usage (Modularity)
 
 The scripts now support category-based installation. Instead of `--all` or `-All`, you can pick specific stacks:
 
@@ -101,7 +101,7 @@ The scripts now support category-based installation. Instead of `--all` or `-All
 
 ---
 
-## 📜 Logging & Recovery
+## <a id="logging"></a>📜 Logging & Recovery
 All installations are logged for troubleshooting:
 - **Ubuntu Root**: `/var/log/install-software-root.log`
 - **Ubuntu User**: `~/.local/state/install-software-user.log`
@@ -109,7 +109,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## 📋 Software List
+## <a id="software-list"></a>📋 Software List
 
 | # | Software | Category | Description | Ubuntu | Windows |
 |---:|:---|:---|:---|:---|:---|
@@ -285,7 +285,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## 🚀 Quick Start
+## <a id="quick-start"></a>🚀 Quick Start
 
 ### Ubuntu
 
@@ -309,7 +309,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 <br>
 
-# 🐧 Ubuntu
+# <a id="ubuntu-section"></a>🐧 Ubuntu
 
 ## Summary
 
@@ -625,7 +625,7 @@ Installs the Joplin note-taking app via the official installer script.
 
 <br>
 
-# 🪟 Windows
+# <a id="windows-section"></a>🪟 Windows
 
 ## Summary
 
@@ -783,7 +783,7 @@ This moves the default `Users` folder from `C:\Users` to `D:\Users`.
 
 ---
 
-## 🔧 Configuration Files
+## <a id="configs"></a>🔧 Configuration Files
 
 | File | Description |
 |:---|:---|
