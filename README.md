@@ -36,7 +36,7 @@
 
 ---
 
-## <a id="repo-structure"></a>📂 Repository Structure
+## <a id="repo-structure"></a>📂 Repository Structure <span align="right">[[🔝](#toc)]</span>
 
 ```
 install-software/
@@ -57,7 +57,7 @@ install-software/
 
 ---
 
-## <a id="usage"></a>🚀 Usage
+## <a id="usage"></a>🚀 Usage <span align="right">[[🔝](#toc)]</span>
 
 ### Ubuntu
 1.  **Configure Root environment**:
@@ -85,7 +85,7 @@ install-software/
 
 ---
 
-## <a id="advanced"></a>🛠️ Advanced Usage (Modularity)
+## <a id="advanced"></a>🛠️ Advanced Usage (Modularity) <span align="right">[[🔝](#toc)]</span>
 
 The scripts now support category-based installation. Instead of `--all` or `-All`, you can pick specific stacks:
 
@@ -101,7 +101,7 @@ The scripts now support category-based installation. Instead of `--all` or `-All
 
 ---
 
-## <a id="logging"></a>📜 Logging & Recovery
+## <a id="logging"></a>📜 Logging & Recovery <span align="right">[[🔝](#toc)]</span>
 All installations are logged for troubleshooting:
 - **Ubuntu Root**: `/var/log/install-software-root.log`
 - **Ubuntu User**: `~/.local/state/install-software-user.log`
@@ -109,7 +109,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## <a id="software-list"></a>📋 Software List
+## <a id="software-list"></a>📋 Software List <span align="right">[[🔝](#toc)]</span>
 
 | # | Software | Category | Description | Ubuntu | Windows |
 |---:|:---|:---|:---|:---|:---|
@@ -285,7 +285,7 @@ All installations are logged for troubleshooting:
 
 ---
 
-## <a id="quick-start"></a>🚀 Quick Start
+## <a id="quick-start"></a>🚀 Quick Start <span align="right">[[🔝](#toc)]</span>
 
 ### Ubuntu
 
@@ -309,7 +309,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 <br>
 
-# <a id="ubuntu-section"></a>🐧 Ubuntu
+# <a id="ubuntu-section"></a>🐧 Ubuntu <span align="right">[[🔝](#toc)]</span>
 
 ## Summary
 
@@ -625,7 +625,7 @@ Installs the Joplin note-taking app via the official installer script.
 
 <br>
 
-# <a id="windows-section"></a>🪟 Windows
+# <a id="windows-section"></a>🪟 Windows <span align="right">[[🔝](#toc)]</span>
 
 ## Summary
 
@@ -783,7 +783,7 @@ This moves the default `Users` folder from `C:\Users` to `D:\Users`.
 
 ---
 
-## <a id="configs"></a>🔧 Configuration Files
+## <a id="configs"></a>🔧 Configuration Files <span align="right">[[🔝](#toc)]</span>
 
 | File | Description |
 |:---|:---|
