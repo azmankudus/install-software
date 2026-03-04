@@ -1,0 +1,33 @@
+name: Lint Scripts
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './ubuntu'
+
+  powershell-lint:
+    name: PSScriptAnalyzer
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PSScriptAnalyzer
+        shell: pwsh
+        run: Install-Module -Name PSScriptAnalyzer -Force -SkipPublisherCheck
+      - name: Run PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          Invoke-ScriptAnalyzer -Path ./windows -Recurse | Where-Object { $_.Severity -eq 'Error' } | ForEach-Object {
+            Write-Error "Lint error in $($_.ScriptPath):$($_.Line): $($_.Message)"
+          }

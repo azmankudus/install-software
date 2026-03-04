@@ -20,27 +20,72 @@
 
 ```
 install-software/
+├── .github/
+│   └── workflows/ lint.yml      # CI/CD Script Validation
 ├── ubuntu/
-│   ├── install-root.sh          # Root-level packages & repos (run with sudo)
-│   └── install-user.sh          # User-level tools (SDKMAN, Rust, Ruby, …)
+│   ├── install-root.sh         # Modular Root packages (sudo)
+│   ├── install-user.sh         # Modular User stacks (SDKMAN, etc.)
+│   └── sync-configs.sh         # Apply settings from config/
 ├── windows/
-│   ├── install.ps1              # Winget + Scoop + MSYS2 + config
-│   └── reg/                     # Registry tweaks (.reg files)
-│       ├── custom/              # Custom context-menu entries
-│       └── undo/                # Revert files for each tweak
-├── config/
-│   ├── oh-my-posh.json          # Oh My Posh theme (cross-platform)
-│   ├── Microsoft.PowerShell_profile.ps1
-│   ├── relocate.xml             # Sysprep: move user profiles to D:\
-│   ├── easyeffects/
-│   │   ├── hp.json              # EasyEffects preset — Headphones
-│   │   └── spk.json             # EasyEffects preset — Speakers
-│   ├── foo_openlyrics-v1.8.fb2k-component
-│   └── foo_vis_spectrum_analyzer.fb2k-component
-├── old/                         # Original unstructured scripts (archived)
-├── LICENSE
-└── README.md                    # ← You are here
+│   ├── install.ps1             # Modular Winget + Scoop + MSYS2
+│   ├── sync-configs.ps1        # Apply settings from config/
+│   └── reg/                    # Registry tweaks
+├── config/                     # Shared configurations
+├── old/                        # Archived legacy scripts
+└── README.md
 ```
+
+---
+
+## 🚀 Usage
+
+### Ubuntu
+1.  **Configure Root environment**:
+    ```bash
+    sudo bash ubuntu/install-root.sh --all
+    ```
+2.  **Setup User environment**:
+    ```bash
+    bash ubuntu/install-user.sh --all
+    ```
+3.  **Sync Configurations**:
+    ```bash
+    bash ubuntu/sync-configs.sh
+    ```
+
+### Windows
+1.  **Run Installer (Admin)**:
+    ```powershell
+    .\windows\install.ps1 -All
+    ```
+2.  **Sync Configurations**:
+    ```powershell
+    .\windows\sync-configs.ps1
+    ```
+
+---
+
+## 🛠️ Advanced Usage (Modularity)
+
+The scripts now support category-based installation. Instead of `--all` or `-All`, you can pick specific stacks:
+
+| Flag (Ubuntu) | Flag (Windows) | Includes |
+|:---|:---|:---|
+| `--dev` | `-Dev` | Git, VS Code, JDKs, Python, Rust, Go, etc. |
+| `--browser` | `-Browser` | Chrome, Edge, Firefox, Vivaldi, LibreWolf |
+| `--comm` | `-Comm` | Discord, Teams, Slack, Zoom, Webex |
+| `--db` | `-DB` | DBeaver, MySQL, Mongo, Postgres clients |
+| `--virt` | `-Virt` | Docker/Podman, VirtualBox, VMware |
+| `--net` | `-Net` | Wireshark, Nmap, Putty, Tailscale |
+| `--prod` | `-Prod` | LibreOffice, Bitwarden, Joplin |
+
+---
+
+## 📜 Logging & Recovery
+All installations are logged for troubleshooting:
+- **Ubuntu Root**: `/var/log/install-software-root.log`
+- **Ubuntu User**: `~/.local/state/install-software-user.log`
+- **Windows**: `~\install-software.log`
 
 ---
 
