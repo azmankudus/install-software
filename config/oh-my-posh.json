@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{.Folder}} :: {{.UserName}}@{{.HostName}}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "time_format": "2006-01-02T15:04:05Z07:00"
+          },
+          "template": " \uf017 {{.CurrentDate | date .Format}} ",
+          "foreground": "white",
+          "background": "#000272",
+          "type": "time",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": " \udb81\udfc0 {{.HostName}} ",
+          "foreground": "white",
+          "background": "#89375F",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": " \uf2c0 {{.UserName}} ",
+          "foreground": "white",
+          "background": "#3A1078",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": " \uebc7 {{.Name}}-{{.Version}} ",
+          "foreground": "white",
+          "background": "#9D5C0D",
+          "type": "shell",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "always_enabled": true,
+            "cache_duration": "none",
+            "style": "austin",
+            "threshold": 0
+          },
+          "template": " \udb86\udd9f {{.FormattedMs}} ",
+          "foreground": "white",
+          "background": "#0D63A5",
+          "type": "executiontime",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "always_enabled": true,
+            "cache_duration": "none"
+          },
+          "template": " \udb82\ude48 {{.Code}} ",
+          "foreground": "white",
+          "background": "#00897b",
+          "type": "exit",
+          "style": "plain",
+          "background_templates": [
+            "{{if gt .Code 0}}#820000{{end}}"
+          ]
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\n",
+          "type": "text",
+          "style": "plain"
+        },        {
+          "properties": {
+            "branch_icon": "",
+            "cache_duration": "none"
+          },
+          "template": " \ue725 {{.HEAD}} ",
+          "foreground": "white",
+          "background": "#91684A",
+          "type": "git",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "style": "full"
+          },
+          "template": " \uf07c  {{.Path}} ",
+          "foreground": "white",
+          "background": "#125C13",
+          "type": "path",
+          "style": "plain"
+        },
+
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\n",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "$",
+          "type": "text",
+          "style": "plain"
+        }
+      ]
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}
