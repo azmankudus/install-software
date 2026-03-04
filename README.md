@@ -18,21 +18,21 @@
 
 ## � Table of Contents
 
-- [📂 Repository Structure](#repository-structure)
-- [🚀 Usage](#usage)
+- [📂 Repository Structure](#-repository-structure)
+- [🚀 Usage](#-usage)
   - [Ubuntu](#ubuntu)
   - [Windows](#windows)
-- [🛠️ Advanced Usage (Modularity)](#advanced-usage-modularity)
-- [📜 Logging & Recovery](#logging--recovery)
-- [📋 Software List](#software-list)
-- [🚀 Quick Start](#quick-start)
-- [🐧 Ubuntu](#ubuntu)
+- [🛠️ Advanced Usage (Modularity)](#-advanced-usage-modularity)
+- [📜 Logging & Recovery](#-logging--recovery)
+- [📋 Software List](#-software-list)
+- [🚀 Quick Start](#-quick-start)
+- [🐧 Ubuntu](#-ubuntu)
   - [Summary](#summary)
   - [Detailed Steps](#detailed-steps)
-- [🪟 Windows](#windows)
+- [🪟 Windows](#-windows)
   - [Summary](#summary-1)
   - [Detailed Steps](#detailed-steps-1)
-- [🔧 Configuration Files](#configuration-files)
+- [🔧 Configuration Files](#-configuration-files)
 
 ---
 
